@@ -8,7 +8,6 @@ import cssModulesIcon from "../assets/icons/css-modules-icon.png";
 import nodeIcon2 from "../assets/icons/node-icon2.svg";
 import expressIcon from "../assets/icons/express-icon.svg";
 import pugIcon from "../assets/icons/pug-icon.svg";
-import databaseIcon from "../assets/icons/database-icon.svg";
 import mongodbIcon from "../assets/icons/mongodb-icon.svg";
 import mongooseIcon from "../assets/icons/mongoose-icon.png";
 import mySqlIcon from "../assets/icons/mysql-icon.svg";
@@ -21,22 +20,6 @@ import matlabIcon from "../assets/icons/matlab-icon.svg";
 import pythonIcon from "../assets/icons/python-icon.svg";
 import cppIcon from "../assets/icons/cpp-icon.svg";
 import webpackIcon from "../assets/icons/webpack-icon.svg";
-
-const languages = [
-  {
-    title: "Programming Languages",
-    classname: "languages",
-    skills: [
-      { str: "HTML", img: htmlIcon, invert_img: false },
-      { str: "CSS", img: cssIcon, invert_img: false },
-      { str: "JavaScript", img: jsIcon, invert_img: false },
-      { str: "Java", img: javaIcon, invert_img: false },
-      { str: "Python", img: pythonIcon, invert_img: false },
-      { str: "C++", img: cppIcon, invert_img: false },
-      { str: "MATLAB", img: matlabIcon, invert_img: false },
-    ],
-  },
-];
 
 const skillGroups = [
   {
@@ -76,7 +59,6 @@ const skillGroups = [
     title: "Database",
     classname: "database",
     skills: [
-      { str: "SQL/NoSQL", img: databaseIcon, invert_img: true },
       { str: "MongoDB", img: mongodbIcon, invert_img: false },
       { str: "Mongoose", img: mongooseIcon, invert_img: false },
       { str: "MySQL", img: mySqlIcon, invert_img: false },
