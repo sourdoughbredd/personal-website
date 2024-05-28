@@ -50,7 +50,7 @@ const Headshot = () => {
         </li>
         <li>
           <CopyToClipboard
-            text="bwbussell24@gmail.com"
+            text="brettwbussell@gmail.com"
             message="Copied email to clipboard!"
           >
             <img className={styles.icon} src={email} alt="" />
