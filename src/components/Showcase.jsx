@@ -24,12 +24,15 @@ const Project = ({
               <li key={feature}>{feature}</li>
             ))}
           </ul>
-          <h4>Tech Stack</h4>
-          <span>
-            {tech.reduce((acc, curr, idx) => {
-              return acc + " " + curr + (idx < tech.length - 1 ? "," : "");
-            }, "")}
-          </span>
+          <div className={styles["tech-stack-container"]}>
+            <h4>Tech Stack</h4>
+            <span>
+              {tech.reduce((acc, curr, idx) => {
+                return acc + " " + curr + (idx < tech.length - 1 ? "," : "");
+              }, "")}
+            </span>
+          </div>
+
           {private_repo ? (
             <div className={styles.buttons}>
               <a>
