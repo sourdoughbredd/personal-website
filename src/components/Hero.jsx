@@ -2,6 +2,8 @@ import styles from "./Hero.module.css";
 import headshot from "../assets/headshot-ucb.jpg";
 import email from "../assets/email-outline.svg";
 
+import CopyToClipboard from "./CopyToClipboard";
+
 const Tagline = () => {
   return (
     <div className={styles["tagline-container"]}>
@@ -47,9 +49,12 @@ const Headshot = () => {
           </a>
         </li>
         <li>
-          <a href="">
+          <CopyToClipboard
+            text="bwbussell24@gmail.com"
+            message="Copied email to clipboard!"
+          >
             <img className={styles.icon} src={email} alt="" />
-          </a>
+          </CopyToClipboard>
         </li>
       </ul>
     </div>
