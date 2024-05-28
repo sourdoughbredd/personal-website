@@ -19,6 +19,7 @@
 
 .project-info-container h3 {
   margin-bottom: 0.7rem;
+  font-size: 2rem;
 }
 
 .project-info-container p {
@@ -80,6 +81,6 @@
   filter: invert(0.08);
 }
 
-.project:last-child .screenshot {
+.extraction-game .screenshot {
   height: 525px;
 }
