@@ -1,4 +1,4 @@
-import styles from "./Showcase.module.css";
+import styles from "./FeaturedProjects.module.css";
 import projects from "../data/projects.js";
 
 const Project = ({
@@ -53,9 +53,9 @@ const Project = ({
   );
 };
 
-const Showcase = () => {
+const FeaturedProjects = () => {
   return (
-    <div className={styles["showcase-container"]}>
+    <div className={styles["section-container"]}>
       <h2>Featured Projects</h2>
       <div className={styles["projects-container"]}>
         {projects.map((project) => (
@@ -66,4 +66,4 @@ const Showcase = () => {
   );
 };
 
-export default Showcase;
+export default FeaturedProjects;

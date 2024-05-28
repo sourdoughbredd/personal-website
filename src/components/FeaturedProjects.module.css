@@ -1,4 +1,4 @@
-.showcase-container h2 {
+.section-container h2 {
   font-size: var(--section-title-font-size);
   margin-bottom: 3rem;
 }
@@ -41,10 +41,6 @@
 .project-info-container h4 {
   margin-bottom: 4px;
   font-size: 1.2rem;
-}
-
-.project-info-container ul {
-  /* margin-bottom: 4rem; */
 }
 
 .project-info-container h4 + span {
@@ -95,10 +91,6 @@
   filter: invert(0.08);
 }
 
-.project:first-child .screenshot {
-  height: 400px;
-}
-
 .project:last-child .screenshot {
-  height: 340px;
+  height: 525px;
 }
