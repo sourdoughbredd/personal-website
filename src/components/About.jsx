@@ -7,27 +7,36 @@ const About = () => {
       <div className={styles.paragraphs}>
         <div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
-            voluptatibus quibusdam, laudantium perspiciatis, quo suscipit maxime
-            voluptatum corrupti autem repellendus odit voluptates! Magni placeat
-            et obcaecati, magnam veritatis odio vero.
+            Over the past 12 years, I've gained a wealth of experience across
+            various fields, including working on an almond ranch, a short career
+            as a mortgage loan officer, earning an M.S. in Mechanical
+            Engineering from UC Berkeley, and serving as a flight controls
+            engineer for the U.S. Navy. Through these diverse experiences, I
+            developed a profound passion for coding, which led me to fully
+            commit to a career in software development.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
-            aspernatur nobis eum saepe? Et, tempora harum temporibus error quos
-            culpa vero est perspiciatis facilis ipsam soluta nisi expedita
-            ducimus tempore.
+            My journey has equipped me with the resilience and adaptability
+            needed to tackle complex projects and deliver high-quality
+            solutions. I bring a diverse set of skills and experiences to every
+            project, allowing me to approach challenges with a fresh and
+            creative mindset.
           </p>
         </div>
         <div>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-            totam autem numquam fuga dolores! Officiis ipsum delectus asperiores
-            dolorem repellendus ab possimus iusto eos nostrum omnis eligendi
-            molestiae, quam nisi. Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Eligendi maxime dolore harum cum suscipit ipsum
-            facilis ab officia, totam quas, ea, dignissimos dolor unde deleniti
-            obcaecati atque eos mollitia rem.
+            As a full-stack developer, I am passionate about creating robust,
+            user-friendly applications with well-organized code. I excel in
+            technical presentation and communication, ensuring that complex
+            ideas are effectively conveyed to the targeted audience. Whether
+            it's developing web applications, optimizing performance, or
+            implementing new features, I am committed to excellence in every
+            aspect of my work.
+          </p>
+          <p>
+            I'm always excited to take on new challenges and collaborate with
+            others who share my passion for technology. Let's connect and make
+            something amazing together!
           </p>
         </div>
       </div>
