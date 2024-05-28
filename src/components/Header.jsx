@@ -9,9 +9,9 @@ const Header = () => {
         </a>
         <nav className={styles.nav}>
           <ul>
-            <li>
+            {/* <li>
               <a href="/about">About</a>
-            </li>
+            </li> */}
             <li>
               <a href="/contact">Contact</a>
             </li>
