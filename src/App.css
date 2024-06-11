@@ -1,6 +1,14 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  flex-grow: 1;
+  max-width: 1000px;
   padding: 2rem;
-  text-align: center;
+
+  --tagline-font-size: 3rem;
+  --section-title-font-size: 2rem;
+}
+
+@media (max-width: 750px) {
+  .section-title {
+    text-align: center;
+  }
 }
