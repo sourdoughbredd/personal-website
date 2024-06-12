@@ -11,13 +11,22 @@
 
 .skillgroups-container {
   padding: 0 10px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
+  /* display: grid; */
+  /* gap: 12px;
   grid-template-columns: 1fr 0.7fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; */
 }
 
-.skillgroups-container .skillgroup:nth-child(1) {
+.skillgroups-row {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+/* .skillgroups-container .skillgroup:nth-child(1) {
   grid-column: 1 / -1;
 }
 
@@ -27,7 +36,7 @@
 
 .skillgroups-container .skillgroup:last-child {
   grid-column: 2 / -1;
-}
+} */
 
 .skillgroup {
   flex-grow: 1;
@@ -72,5 +81,11 @@
 @media (max-width: 1064px) {
   .skill-container img {
     height: 40px;
+  }
+}
+
+@media (max-width: 750px) {
+  .skillgroups-row:not(:first-child) {
+    flex-direction: column;
   }
 }
