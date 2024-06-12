@@ -86,7 +86,7 @@ button:focus-visible {
 /* MEDIA QUERIES */
 
 @media (max-width: 1064px) {
-  :root {
+  /* :root {
     font-size: 14px;
-  }
+  } */
 }
