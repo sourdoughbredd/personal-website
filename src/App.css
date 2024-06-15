@@ -2,6 +2,7 @@
   flex-grow: 1;
   max-width: 1000px;
   padding: 2rem;
+  box-sizing: border-box;
 
   --tagline-font-size: 3rem;
   --section-title-font-size: 2rem;
