@@ -12,7 +12,9 @@ import bearMaps from "../assets/project-screenshots/bear-maps.png";
 const projects = [
   {
     title: "Blog API",
-    description:
+    description_short:
+      "A comprehensive NodeJS + Express backend for managing a blog.",
+    description_long:
       "The Blog API allows users to create, read, update, and delete blog posts and comments. It includes user authentication and authorization features to ensure secure access to the blog functionalities, as well as CORS policies to limit access to certain client URLs.",
     features: [
       "Create, read, update, and delete endpoints for blog posts, users, and comments",
@@ -20,7 +22,7 @@ const projects = [
       "Secure password storage with bcryptJS",
       "Limit access to certain client URLs with CORS policies",
     ],
-    tech: ["Javascript", "NodeJS", "Express", "MongoDB"],
+    tech: ["NodeJS", "Express", "MongoDB"],
     img: blogApiImg,
     repo_link: "https://github.com/sourdoughbredd/blog-api",
     live_link: "https://blog-client-bb.netlify.app",
@@ -31,7 +33,9 @@ const projects = [
 
   {
     title: "Inventory Application",
-    description:
+    description_short:
+      "A NodeJS + Express backend for managing an inventory of beers with views served up with Pug.",
+    description_long:
       "The Inventory Application is designed to help beer sellers manage their inventory of different beer products. It provides features to add, update, delete, and view details of breweries, beer types, beers, and individual beer SKUs. The application is built using Node.js and Express, with a MongoDB database for storage.",
     features: [
       "CRUD operations for breweries, beer types, beers, and beer SKUs with data interconnectivity protections",
@@ -40,7 +44,7 @@ const projects = [
       "MVC (Model-View-Controller) architecture for efficient separation of concerns and maintainable code structure",
       "Server-side form sanitization and validation with express-validator",
     ],
-    tech: ["Javascript", "NodeJS", "Express", "Pug", "MongoDB"],
+    tech: ["NodeJS", "Express", "MongoDB", "Pug"],
     img: inventoryApp,
     repo_link: "https://github.com/sourdoughbredd/inventory-application",
     live_link: "https://inventory-application-bb.fly.dev/",
@@ -51,7 +55,9 @@ const projects = [
 
   {
     title: "Resumé Builder",
-    description:
+    description_short:
+      "A React app for automatically building a resumé from form inputs.",
+    description_long:
       "The Resume Builder application allows users to create and customize their resumes through a user-friendly interface. This project showcases advanced React techniques, state management, form handling, and integration with Vite for a seamless development experience.",
     features: [
       "Dynamic Form Handling: Implemented using React's state and effect hooks to manage form data and real-time updates using prop hoisting/drilling (before I learned about Context API).",
@@ -69,10 +75,12 @@ const projects = [
 
   {
     title: "To-Do List",
-    description:
+    description_short:
+      "A simple frontend task tracking app built with vanilla HTML/CSS/JS.",
+    description_long:
       "The To-Do List application allows users to manage their tasks efficiently. Users can add, edit, delete, and organize tasks into different projects. The application is built completely with vanilla HTML/CSS/JS and utilizes Webpack for module bundling.",
     features: [
-      "Add Tasks: Users can add new tasks with a description, importance, and due date.",
+      "Add Tasks: Users can add new tasks with a description_long, importance, and due date.",
       "Edit Tasks: Tasks can be edited to update their details.",
       "Delete Tasks: Users can delete tasks that are no longer needed.",
       "Project Management: Tasks can be organized into different projects for better management.",
@@ -88,7 +96,9 @@ const projects = [
 
   {
     title: "Extraction Game",
-    description:
+    description_short:
+      "A tile-based extraction game with random world generation using binary space partitioning.",
+    description_long:
       "A game where the player must extract from the map with the valuable loot. The game features fully randomized map generation using binary space partitioning, saving/loading games, and vision constriction to make the loot harder to find.",
     features: [
       "Random map generation using the binary space partitioning (BSP) algorithm. Replay the same map by entering the same seed.",
@@ -107,7 +117,9 @@ const projects = [
 
   {
     title: "Bear Maps",
-    description:
+    description_short:
+      "A web mapping application with map rastering and shortest path routing.",
+    description_long:
       "Bear Maps is a web mapping application inspired by Google Maps, where users can interact with a map of Berkeley. The application supports features like scrolling, zooming, and route finding, powered by a Java backend.",
     features: [
       "Map Rastering: Converts map data into pixel images for display.",
@@ -125,7 +137,9 @@ const projects = [
 
   {
     title: "Shopping Cart",
-    description:
+    description_short:
+      "An e-commerce site with cart management using React Context API.",
+    description_long:
       "The Shopping Cart Project is an e-commerce site designed to let users browse products, add them to their cart, and manage their cart with ease. Built with modern web technologies like React for the frontend and Vite as the build tool, this application focuses on robust application logic rather than visual aesthetics.",
     features: [
       "Single Page Application (SPA) Principles: Implemented using React Router with a shared layout across all pages.",
@@ -143,7 +157,9 @@ const projects = [
 
   {
     title: "Weather App",
-    description:
+    description_short:
+      "A vanilla HTML/CSS/JS Apple weather app clone utilizing the WeatherAPI",
+    description_long:
       "The (Apple Clone) Weather App fetches current and forecast weather data from a weather API. Users can search for weather information by entering a city name or airport code. The app displays current weather conditions, hourly weather for the next 24 hours, and a three-day forecast.",
     features: [
       "API Integration: Fetches current and forecast weather data using the WeatherAPI.",
@@ -162,7 +178,9 @@ const projects = [
 
   {
     title: "Battleship",
-    description:
+    description_short:
+      "The classic game of Battleship with game logging and playback for debugging.",
+    description_long:
       "A web-based implementation of the classic Battleship game. Crafted with precision and a clear coding style, this standalone web app is bundled with Webpack, emphasizing modern web development practices. It also features a simple error logging and game replay system for debugging game crashes.",
     features: [
       "Player vs Computer gameplay",
@@ -182,7 +200,9 @@ const projects = [
 
   {
     title: "Sign Up Form",
-    description:
+    description_short:
+      "A responsive sign-up form with live form validation and aesthitic user feedback.",
+    description_long:
       "A responsive sign-up form built with HTML, CSS, and JavaScript. It includes live form validation with a simple and intuitive user feedback.",
     features: [
       "Responsive design via flexbox and media queries",
