@@ -2,9 +2,9 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Skills from "../components/Skills";
 import ProjectShowcase from "../components/ProjectShowcase";
+import Connect from "../components/Connect.jsx";
 
 import { Link } from "react-router-dom";
-
 import styles from "./Home.module.css";
 import { featuredProjects } from "../data/projects.js";
 
@@ -25,6 +25,7 @@ const Home = () => {
         <Link to="/projects">Click here to see more projects.</Link>
       </div>
       <hr />
+      <Connect />
     </>
   );
 };
