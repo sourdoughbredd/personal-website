@@ -11,7 +11,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
-import ProjectDetails from "./pages/ProjectDetails"; // Import the new ProjectDetails component
+import ProjectDetails from "./pages/ProjectDetails";
+import Contact from "./pages/Contact";
 
 const pageVariants = {
   initial: {
@@ -82,6 +83,20 @@ const Layout = () => {
                   transition={pageTransition}
                 >
                   <ProjectDetails />
+                </motion.div>
+              }
+            />
+            <Route
+              path="contact"
+              element={
+                <motion.div
+                  initial="initial"
+                  animate="in"
+                  exit="out"
+                  variants={pageVariants}
+                  transition={pageTransition}
+                >
+                  <Contact />
                 </motion.div>
               }
             />
