@@ -2,7 +2,7 @@ import styles from "./Hero.module.css";
 import headshot from "../assets/headshot-ucb.jpg";
 import email from "../assets/email-outline.svg";
 
-import CopyToClipboard from "./CopyToClipboard";
+import { Link } from "react-router-dom";
 
 const Tagline = () => {
   return (
@@ -49,12 +49,9 @@ const Headshot = () => {
           </a>
         </li>
         <li>
-          <CopyToClipboard
-            text="brettwbussell@gmail.com"
-            message="Copied email to clipboard!"
-          >
+          <Link to="/contact">
             <img className={styles.icon} src={email} alt="" />
-          </CopyToClipboard>
+          </Link>
         </li>
       </ul>
     </div>
