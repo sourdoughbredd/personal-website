@@ -12,10 +12,10 @@ const ProjectDetails = () => {
       <div className={styles["project-info-container"]}>
         <div className={styles["header-group"]}>
           <span>Project Details</span>
-
           <h3 className={styles.title}>{project.title}</h3>
         </div>
         <p className={styles["description-long"]}>{project.description_long}</p>
+        <img src={project.img} alt="" className={styles.screenshot} />
         <h4 className={styles["features-header"]}>Features</h4>
         <ul className={styles["features-list"]}>
           {project.features.map((feature) => (
@@ -34,7 +34,6 @@ const ProjectDetails = () => {
         </div>
         <ProjectLinks {...project} />
       </div>
-      <img src={project.img} alt="" className={styles.screenshot} />
     </div>
   );
 };
