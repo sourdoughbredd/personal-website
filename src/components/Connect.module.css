@@ -4,6 +4,10 @@
   font-size: 1.2rem;
 }
 
+.content-container > div:first-of-type {
+  margin-top: 1.5rem;
+}
+
 .connect-section h2 {
   margin: 0;
 }
@@ -44,6 +48,10 @@
 @media (max-width: 750px) {
   .content-container {
     flex-direction: column;
+  }
+
+  .content-container > div:first-of-type {
+    margin-top: 0;
   }
 
   .headshot {
