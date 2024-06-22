@@ -80,7 +80,7 @@ const projects = [
     description_long:
       "The To-Do List application allows users to manage their tasks efficiently. Users can add, edit, delete, and organize tasks into different projects. The application is built completely with vanilla HTML/CSS/JS and utilizes Webpack for module bundling.",
     features: [
-      "Add Tasks: Users can add new tasks with a description_long, importance, and due date.",
+      "Add Tasks: Users can add new tasks with a description, importance, and due date.",
       "Edit Tasks: Tasks can be edited to update their details.",
       "Delete Tasks: Users can delete tasks that are no longer needed.",
       "Project Management: Tasks can be organized into different projects for better management.",
