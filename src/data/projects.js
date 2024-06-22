@@ -216,6 +216,24 @@ const projects = [
     featured: false,
     name: "sign-up-form",
   },
+  {
+    title: "New Project",
+    description_short:
+      "A responsive sign-up form with live form validation and aesthitic user feedback.",
+    description_long:
+      "A responsive sign-up form built with HTML, CSS, and JavaScript. It includes live form validation with a simple and intuitive user feedback.",
+    features: [
+      "Responsive design via flexbox and media queries",
+      "Live form validation with simple and effective user feedback",
+    ],
+    tech: ["HTML", "CSS", "Javascript"],
+    img: signupForm,
+    repo_link: "https://github.com/sourdoughbredd/sign-up-form",
+    live_link: "https://sourdoughbredd.github.io/sign-up-form/",
+    private_repo: false,
+    featured: false,
+    name: "sign-up-form",
+  },
 ];
 
 const featuredProjects = projects.filter((project) => project.featured);
