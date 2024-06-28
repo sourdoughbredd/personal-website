@@ -3,6 +3,7 @@ import styles from "./Skills.module.css";
 import htmlIcon from "../assets/icons/html-icon.svg";
 import cssIcon from "../assets/icons/css-icon.svg";
 import jsIcon from "../assets/icons/javascript-icon.svg";
+import tsIcon from "../assets/icons/typescript-icon.svg";
 import reactIcon from "../assets/icons/react-icon.svg";
 import cssModulesIcon from "../assets/icons/css-modules-icon.png";
 import nodeIcon2 from "../assets/icons/node-icon2.svg";
@@ -29,6 +30,7 @@ const skillGroups = [
       { str: "HTML", img: htmlIcon, invert_img: false },
       { str: "CSS", img: cssIcon, invert_img: false },
       { str: "JavaScript", img: jsIcon, invert_img: false },
+      { str: "TypeScript", img: tsIcon, invert_img: false },
       { str: "Java", img: javaIcon, invert_img: false },
       { str: "Python", img: pythonIcon, invert_img: false },
       { str: "C++", img: cppIcon, invert_img: false },
@@ -42,8 +44,9 @@ const skillGroups = [
       { str: "HTML", img: htmlIcon, invert_img: false },
       { str: "CSS", img: cssIcon, invert_img: false },
       { str: "JavaScript", img: jsIcon, invert_img: false },
+      { str: "TypeScript", img: tsIcon, invert_img: false },
       { str: "React", img: reactIcon, invert_img: false },
-      { str: "CSS Modules", img: cssModulesIcon, invert_img: false },
+      // { str: "CSS Modules", img: cssModulesIcon, invert_img: false },
     ],
   },
   {
