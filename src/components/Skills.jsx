@@ -27,8 +27,6 @@ const skillGroups = [
     title: "Programming Languages",
     classname: "languages",
     skills: [
-      { str: "HTML", img: htmlIcon, invert_img: false },
-      { str: "CSS", img: cssIcon, invert_img: false },
       { str: "JavaScript", img: jsIcon, invert_img: false },
       { str: "TypeScript", img: tsIcon, invert_img: false },
       { str: "Java", img: javaIcon, invert_img: false },
@@ -46,7 +44,6 @@ const skillGroups = [
       { str: "JavaScript", img: jsIcon, invert_img: false },
       { str: "TypeScript", img: tsIcon, invert_img: false },
       { str: "React", img: reactIcon, invert_img: false },
-      // { str: "CSS Modules", img: cssModulesIcon, invert_img: false },
     ],
   },
   {
