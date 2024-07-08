@@ -1,17 +1,19 @@
 import styles from "./ProjectLinks.module.css";
 
-const ProjectLinks = ({ private_repo, live_link, repo_link }) => {
-  if (private_repo) {
+const ProjectLinks = ({ links }) => {
+  if (!links) {
+    return <></>;
+  } else if ("alt" in links) {
     return (
       <div className={styles.buttons}>
-        <a>This code must be kept private. Contact me to request access.</a>
+        <a>{links.alt}</a>
       </div>
     );
   } else {
     return (
       <div className={styles.buttons}>
-        <a href={live_link}>Live Preview</a>
-        <a href={repo_link}>Github Repo</a>
+        <a href={links.live_link}>Live Preview</a>
+        <a href={links.repo_link}>Github Repo</a>
       </div>
     );
   }

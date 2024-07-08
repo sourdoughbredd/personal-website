@@ -8,9 +8,12 @@ import weatherApp from "../assets/project-screenshots/weather-app.png";
 import battleship from "../assets/project-screenshots/battleship.png";
 import signupForm from "../assets/project-screenshots/sign-up-form.png";
 import bearMaps from "../assets/project-screenshots/bear-maps.png";
+import laundryMate from "../assets/project-screenshots/laundry-mate.jpg";
+import regenDoor from "../assets/project-screenshots/regen-door.jpg";
 
 const projects = [
   {
+    name: "blog-api",
     title: "Blog API",
     description_short:
       "A comprehensive NodeJS + Express backend for managing a blog.",
@@ -24,14 +27,24 @@ const projects = [
     ],
     tech: ["NodeJS", "Express", "MongoDB"],
     img: blogApiImg,
-    repo_link: "https://github.com/sourdoughbredd/blog-api",
-    live_link: "https://blog-client-bb.netlify.app",
-    private_repo: false,
+    links: {
+      repo_link: "https://github.com/sourdoughbredd/blog-api",
+      live_link: "https://blog-client-bb.netlify.app",
+    },
     featured: true,
-    name: "blog-api",
+    type: "web",
+    tags: [
+      "Backend",
+      "RESTful",
+      "API",
+      "Authentication",
+      "CRUD",
+      "CORS Policies",
+    ],
   },
 
   {
+    name: "inventory-application",
     title: "Inventory Application",
     description_short:
       "A NodeJS + Express backend for managing an inventory of beers with views served up with Pug.",
@@ -46,14 +59,17 @@ const projects = [
     ],
     tech: ["NodeJS", "Express", "MongoDB", "Pug"],
     img: inventoryApp,
-    repo_link: "https://github.com/sourdoughbredd/inventory-application",
-    live_link: "https://inventory-application-bb.fly.dev/",
-    private_repo: false,
+    links: {
+      repo_link: "https://github.com/sourdoughbredd/inventory-application",
+      live_link: "https://inventory-application-bb.fly.dev/",
+    },
     featured: true,
-    name: "inventory-application",
+    type: "web",
+    tags: ["Backend", "CRUD", "API Integration", "Form Validation"],
   },
 
   {
+    name: "resume-builder",
     title: "Resumé Builder",
     description_short:
       "A React app for automatically building a resumé from form inputs.",
@@ -66,14 +82,17 @@ const projects = [
     ],
     tech: ["HTML/CSS/JS", "React", "CSS Modules"],
     img: resumeBuilder,
-    repo_link: "https://github.com/sourdoughbredd/resume-builder",
-    live_link: "https://resume-builder-bb.netlify.app/",
-    private_repo: false,
+    links: {
+      repo_link: "https://github.com/sourdoughbredd/resume-builder",
+      live_link: "https://resume-builder-bb.netlify.app/",
+    },
     featured: true,
-    name: "resume-builder",
+    type: "web",
+    tags: ["Frontend", "Form Handling", "Real-Time Preview", "Dynamic Forms"],
   },
 
   {
+    name: "todo-list",
     title: "To-Do List",
     description_short:
       "A simple frontend task tracking app built with vanilla HTML/CSS/JS.",
@@ -87,14 +106,16 @@ const projects = [
     ],
     tech: ["HTML", "CSS", "Javascript"],
     img: todoList,
-    repo_link: "https://github.com/sourdoughbredd/todo-list",
-    live_link: "https://sourdoughbredd.github.io/todo-list/",
-    private_repo: false,
+    links: {
+      repo_link: "https://github.com/sourdoughbredd/todo-list",
+      live_link: "https://sourdoughbredd.github.io/todo-list/",
+    },
     featured: true,
-    name: "todo-list",
+    type: "web",
   },
 
   {
+    name: "extraction-game",
     title: "Extraction Game",
     description_short:
       "A tile-based extraction game with random world generation using binary space partitioning.",
@@ -108,14 +129,22 @@ const projects = [
     ],
     tech: ["Java"],
     img: extractionGame,
-    repo_link: null,
-    live_link: null,
-    private_repo: true,
+    links: {
+      alt: "This code must be kept private. Contact me to request access.",
+    },
     featured: true,
-    name: "extraction-game",
+    type: "dsa",
+    tags: [
+      "games",
+      "algorithms",
+      "data structures",
+      "DS&A",
+      "binary space partitioning",
+    ],
   },
 
   {
+    name: "bear-maps",
     title: "Bear Maps",
     description_short:
       "A web mapping application with map rastering and shortest path routing.",
@@ -128,14 +157,16 @@ const projects = [
     ],
     tech: ["Java"],
     img: bearMaps,
-    repo_link: null,
-    live_link: null,
-    private_repo: true,
+    links: {
+      alt: "This code must be kept private. Contact me to request access.",
+    },
     featured: false,
-    name: "bear-maps",
+    type: "dsa",
+    tags: ["mapping", "algorithms", "data structures", "DS&A", "graphs"],
   },
 
   {
+    name: "shopping-cart",
     title: "Shopping Cart",
     description_short:
       "An e-commerce site with cart management using React Context API.",
@@ -148,14 +179,16 @@ const projects = [
     ],
     tech: ["HTML/CSS/JS", "React", "FakeStoreAPI"],
     img: shoppingCart,
-    repo_link: "https://github.com/sourdoughbredd/shopping-cart",
-    live_link: "https://shopping-cart-bb.netlify.app/",
-    private_repo: false,
+    links: {
+      repo_link: "https://github.com/sourdoughbredd/shopping-cart",
+      live_link: "https://shopping-cart-bb.netlify.app/",
+    },
     featured: false,
-    name: "shopping-cart",
+    type: "web",
   },
 
   {
+    name: "weather-app",
     title: "Weather App",
     description_short:
       "A vanilla HTML/CSS/JS Apple weather app clone utilizing the WeatherAPI",
@@ -169,14 +202,16 @@ const projects = [
     ],
     tech: ["HTML", "CSS", "Javascript", "WeatherAPI"],
     img: weatherApp,
-    repo_link: "https://github.com/sourdoughbredd/weather-app",
-    live_link: "https://sourdoughbredd.github.io/weather-app/",
-    private_repo: false,
+    links: {
+      repo_link: "https://github.com/sourdoughbredd/weather-app",
+      live_link: "https://sourdoughbredd.github.io/weather-app/",
+    },
     featured: false,
-    name: "weather-app",
+    type: "web",
   },
 
   {
+    name: "battleship",
     title: "Battleship",
     description_short:
       "The classic game of Battleship with game logging and playback for debugging.",
@@ -191,14 +226,16 @@ const projects = [
     ],
     tech: ["HTML", "CSS", "Javascript", "Jest"],
     img: battleship,
-    repo_link: "https://github.com/sourdoughbredd/battleship",
-    live_link: "https://sourdoughbredd.github.io/battleship/",
-    private_repo: false,
+    links: {
+      repo_link: "https://github.com/sourdoughbredd/battleship",
+      live_link: "https://sourdoughbredd.github.io/battleship/",
+    },
     featured: false,
-    name: "battleship",
+    type: "web",
   },
 
   {
+    name: "sign-up-form",
     title: "Sign Up Form",
     description_short:
       "A responsive sign-up form with live form validation and aesthitic user feedback.",
@@ -210,11 +247,53 @@ const projects = [
     ],
     tech: ["HTML", "CSS", "Javascript"],
     img: signupForm,
-    repo_link: "https://github.com/sourdoughbredd/sign-up-form",
-    live_link: "https://sourdoughbredd.github.io/sign-up-form/",
-    private_repo: false,
+    links: {
+      repo_link: "https://github.com/sourdoughbredd/sign-up-form",
+      live_link: "https://sourdoughbredd.github.io/sign-up-form/",
+    },
     featured: false,
-    name: "sign-up-form",
+    type: "web",
+  },
+
+  // ENGINEERING PROJECTS
+  {
+    name: "laundry-mate",
+    title: "Laundry Mate",
+    description_short:
+      "An IoT device that retrofits any clothes washer/dryer with a reservation and notification system.",
+    description_long:
+      "The Laundry Mate is a small IoT device that retrofits any clothes washer/dryer with a reservation and notification system. Machines can be reserved in-person via push button or remotely via SMS message. Laundry Mate will sense when your load has begun and will send you status updates via SMS message.",
+    features: [
+      "Reservation server (Python + Flask) which allows remote reservation via SMS (Twilio API) and in-person reservation via a push button on the Laundry Mate device (MQTT).",
+      "Sensing of laundry cycle Start, Spin, and End using accelerometer and a multi-layer state representation of the laundry cycle.",
+      "MQTT pub/sub protocol allows Laundry Mate devices to communicate status to the server, which can pass that status along to the user via SMS message.",
+    ],
+    tech: ["Python", "Flask", "Twilio API", "C++"],
+    img: laundryMate,
+    links: {
+      alt: "Code will be uploaded soon.",
+    },
+    featured: false,
+    type: "engineering",
+  },
+
+  {
+    name: "regen-door",
+    title: "Regenerative Door Opener",
+    description_short:
+      "An automatic door opener with battery power that is recharged when the door is manually opened.",
+    description_long:
+      "The Regenerative Door Opener is a battery-powered automatic door opener with regenerative charging. My contribution to the project was the electronics design and build. This system includes many features, including a custom Li-ion battery, A/C power backup, battery management system for safe charging/discharging, and a microcontroller to coordinate it all.",
+    features: [
+      "Integrated custom 12V Li-Ion battery as main power supply with 12V AC-DC power supply for backup and emergency charging.",
+      "Regenerative charging via a pre-built motor driver (meant for RC cars), turning manual door openings into electrical power.",
+      "Battery Management System for intelligent charge and discharge control with current sensing for optimal battery health, performance, and safety.",
+    ],
+    tech: ["Electronics Design"],
+    img: regenDoor,
+    links: null,
+    featured: false,
+    type: "engineering",
   },
 ];
 
