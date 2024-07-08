@@ -9,9 +9,7 @@ const ProjectCard = ({
   features,
   img,
   tech,
-  repo_link,
-  live_link,
-  private_repo,
+  links,
   name,
 }) => {
   return (
@@ -42,7 +40,7 @@ const ProjectCard = ({
                 }, "")}
               </span>
             </div>
-            <ProjectLinks {...{ private_repo, live_link, repo_link }} />
+            <ProjectLinks {...{ links }} />
           </div>
         </div>
       </div>

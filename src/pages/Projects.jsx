@@ -15,18 +15,51 @@ const Banner = () => {
 };
 
 const TableOfContents = ({ projects }) => {
+  const ProjectList = ({ projects }) => (
+    <ul>
+      {projects.map((project) => (
+        <li key={project.name}>
+          <Link to={project.name} smooth={true} duration={500} offset={-30}>
+            {project.title}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+
   return (
     <div className={styles["table-of-contents"]}>
       <h3>Table of Contents</h3>
-      <ul>
-        {projects.map((project) => (
-          <li key={project.name}>
-            <Link to={project.name} smooth={true} duration={500} offset={-30}>
-              {project.title}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <div className={styles["toc-container"]}>
+        <div className={styles["toc-column"]}>
+          <h4>Web</h4>
+          <ProjectList
+            {...{
+              projects: projects.filter((project) => project.type === "web"),
+            }}
+          />
+        </div>
+        <div className={styles["toc-column"]}>
+          <div className={styles["toc-subcolumn"]}>
+            <h4>DS&A</h4>
+            <ProjectList
+              {...{
+                projects: projects.filter((project) => project.type === "dsa"),
+              }}
+            />
+          </div>
+          <div className={styles["toc-subcolumn"]}>
+            <h4>Engineering</h4>
+            <ProjectList
+              {...{
+                projects: projects.filter(
+                  (project) => project.type === "engineering"
+                ),
+              }}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
