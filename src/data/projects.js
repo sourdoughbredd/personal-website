@@ -44,6 +44,35 @@ const projects = [
   },
 
   {
+    name: "extraction-game",
+    title: "Extraction Game",
+    description_short:
+      "A tile-based extraction game with random world generation using binary space partitioning.",
+    description_long:
+      "A game where the player must extract from the map with the valuable loot. The game features fully randomized map generation using binary space partitioning, saving/loading games, and vision constriction to make the loot harder to find.",
+    features: [
+      "Random map generation using the binary space partitioning (BSP) algorithm. Replay the same map by entering the same seed.",
+      "Save game state and resume during future session.",
+      "Vision constricted to a small radius to make navigation harder.",
+      "Ability to expand vision radius for a few seconds (once per game).",
+    ],
+    tech: ["Java"],
+    img: extractionGame,
+    links: {
+      alt: "This code must be kept private. Contact me to request access.",
+    },
+    featured: true,
+    type: "dsa",
+    tags: [
+      "games",
+      "algorithms",
+      "data structures",
+      "DS&A",
+      "binary space partitioning",
+    ],
+  },
+
+  {
     name: "inventory-application",
     title: "Inventory Application",
     description_short:
@@ -112,35 +141,6 @@ const projects = [
     },
     featured: true,
     type: "web",
-  },
-
-  {
-    name: "extraction-game",
-    title: "Extraction Game",
-    description_short:
-      "A tile-based extraction game with random world generation using binary space partitioning.",
-    description_long:
-      "A game where the player must extract from the map with the valuable loot. The game features fully randomized map generation using binary space partitioning, saving/loading games, and vision constriction to make the loot harder to find.",
-    features: [
-      "Random map generation using the binary space partitioning (BSP) algorithm. Replay the same map by entering the same seed.",
-      "Save game state and resume during future session.",
-      "Vision constricted to a small radius to make navigation harder.",
-      "Ability to expand vision radius for a few seconds (once per game).",
-    ],
-    tech: ["Java"],
-    img: extractionGame,
-    links: {
-      alt: "This code must be kept private. Contact me to request access.",
-    },
-    featured: true,
-    type: "dsa",
-    tags: [
-      "games",
-      "algorithms",
-      "data structures",
-      "DS&A",
-      "binary space partitioning",
-    ],
   },
 
   {
