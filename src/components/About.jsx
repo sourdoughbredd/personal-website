@@ -29,7 +29,8 @@ const About = () => {
             applications. I enjoy writing clean, well-organized code, and I’m
             good at explaining technical concepts in a way that’s easy to
             understand. Whether I’m developing web applications or perfecting an
-            espresso recipe at home, I aim for excellence in everything I do.
+            espresso recipe at home, I aim for excellence in everything I do and
+            take a lot of pride in my work.
           </p>
           <p>
             I’m always up for new challenges and enjoy working with others who
