@@ -17,7 +17,7 @@ const About = () => {
           </p>
           <p>
             My background is pretty diverse, which has helped me develop the
-            discipline and problem-solving skills needed to handle complex
+            discipline and problem-solving skills needed to tackle complex
             projects. Having done so many different things, I tend to see
             challenges from a unique angle, which helps me come up with creative
             and effective solutions.
@@ -25,12 +25,14 @@ const About = () => {
         </div>
         <div>
           <p>
-            As a full-stack developer, I love building robust, user-friendly
-            applications. I enjoy writing clean, well-organized code, and I’m
-            good at explaining technical concepts in a way that’s easy to
-            understand. Whether I’m developing web applications or perfecting an
-            espresso recipe at home, I aim for excellence in everything I do and
-            take a lot of pride in my work.
+            I'm passionate about all forms of software development. Whether it’s
+            web applications, desktop applications, or embedded systems, I just
+            want to create interesting solutions to interesting problems. I love
+            building robust, user-friendly applications and enjoy writing clean,
+            well-organized code. I’m also skilled at explaining technical
+            concepts in an easy-to-understand way. Whether I’m developing
+            software or perfecting an espresso recipe at home, I aim for
+            excellence in everything I do.
           </p>
           <p>
             I’m always up for new challenges and enjoy working with others who
