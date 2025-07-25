@@ -14,8 +14,8 @@ const Tagline = () => {
       </h1>
       <p>
         I'm Brett, a former flight controls engineer building a new career as a
-        software developer. I thrive on tackling complex challenges and creating
-        innovative software solutions, no matter the domain.
+        software developer. I've got embedded C++ experience, full-stack web
+        development skills, and a passion for clean design.
       </p>
     </div>
   );

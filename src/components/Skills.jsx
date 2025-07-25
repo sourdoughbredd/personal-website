@@ -12,7 +12,7 @@ import pugIcon from "../assets/icons/pug-icon.svg";
 import mongodbIcon from "../assets/icons/mongodb-icon.svg";
 import mongooseIcon from "../assets/icons/mongoose-icon.png";
 import mySqlIcon from "../assets/icons/mysql-icon.svg";
-import gitIcon from "../assets/icons/git-icon.svg";
+import gitlabIcon from "../assets/icons/gitlab-icon.svg";
 import githubIcon from "../assets/icons/github-icon.svg";
 import jestIcon from "../assets/icons/jest-icon.svg";
 import junitIcon from "../assets/icons/junit-icon.svg";
@@ -20,7 +20,7 @@ import javaIcon from "../assets/icons/java-icon.svg";
 import matlabIcon from "../assets/icons/matlab-icon.svg";
 import pythonIcon from "../assets/icons/python-icon.svg";
 import cppIcon from "../assets/icons/cpp-icon.svg";
-import webpackIcon from "../assets/icons/webpack-icon.svg";
+import viteIcon from "../assets/icons/vite-icon.svg";
 
 const skillGroups = [
   {
@@ -68,9 +68,9 @@ const skillGroups = [
     title: "DevOps & Tools",
     classname: "devops",
     skills: [
-      { str: "Git", img: gitIcon, invert_img: false },
+      { str: "Gitlab", img: gitlabIcon, invert_img: false },
       { str: "GitHub", img: githubIcon, invert_img: true },
-      { str: "Webpack", img: webpackIcon, invert_img: false },
+      { str: "Vite", img: viteIcon, invert_img: false },
       { str: "Jest", img: jestIcon, invert_img: false },
       { str: "JUnit", img: junitIcon, invert_img: true },
     ],
